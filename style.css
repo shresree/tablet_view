@@ -37,9 +37,9 @@ p{
 }
 img{
     
-    width: 20%;
+    width: 15%;
     margin:auto;
-    height: auto;
+    height: 20%;
 }
 div{
     min-height: 125px;
@@ -72,7 +72,7 @@ div{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    margin: 40px;
 }
 
 @media (prefers-reduced-motion: reduce){
@@ -80,4 +80,26 @@ div{
         display: none;
     }
 
+}
+
+.zoom-when-hovering{
+    transition: transform 0.5s;
+}
+
+.zoom-when-hovering:hover{
+    transform: scale(1.3);
+}
+
+.zoom-when-hovering:focus{
+    margin-top: 2px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+#comment{
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
 }
