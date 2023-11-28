@@ -51,12 +51,16 @@ div{
 .skip{
     position: absolute; 
     margin-top: -10px;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
 }
 
 .skip:focus{
     margin-top: 2px;
     margin-left: 10px;
     padding: 10px;
+    left: 50%;
 }
 
 .skip.hover{
