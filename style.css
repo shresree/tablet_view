@@ -103,3 +103,7 @@ div{
   padding: 10px;
   text-align: center;
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+    animation-play-state: paused; 
+}
