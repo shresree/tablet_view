@@ -1,4 +1,7 @@
 
+
+
+
 h1{
     color: #00b4c5;
     background: black;
@@ -6,6 +9,7 @@ h1{
     font-size: 30px;
     text-align: center;
     padding: 15px;
+    
 }
 h2{
     color: white;
@@ -38,8 +42,10 @@ p{
 img{
     
     width: 15%;
-    margin:auto;
+    margin: auto;
     height: 20%;
+    border: white 3px solid;
+    padding: 10px;
 }
 div{
     min-height: 125px;
@@ -106,8 +112,4 @@ div{
   border-radius: 5px;
   padding: 10px;
   text-align: center;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-    animation-play-state: paused; 
 }
