@@ -1,183 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <title>Recipe</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Travel</title>
 </head>
+
 <body>
-    <header><h1>Travel</h1></header>
-    <a href = "#main" class = "skip" tabindex=-1> Skip to Main Content</a>
+    <header>
+        <h1>Travel</h1>
+    </header>
+    <a href="#main" class="skip">Skip to Main Content</a>
+ 
     <nav>
         <ul>
-            <li><a href = "index.html" class = "current_pg">Home/Travel</a></li>
-            <li><a href = "pets.html" >Pets</a></li>
-            <li><a href = "recipe.html" >Recipes</a></li>
+            <li><a href="index.html" class="current_pg">Home/Travel</a></li>
+            <li><a href="pets.html">Pets</a></li>
+            <li><a href="recipe.html">Recipes</a></li>
         </ul>
     </nav>
-    <main id = "main">
-        <div id = "main-content">
-            <div id = "comments" >
-<h2>Monet’s Garden</h2>
+    <main>
+        <div id="comments">
+            <h2>Monet’s Garden</h2>
+            <img src="images/MonetsGardenGif.gif" alt="Monet's Garden as a gif" class="zoom-when-hovering">
+            <img src="images/MonetsGardenPond.jpeg" alt="Monet's Garden's pond" class="zoom-when-hovering">
+            <figcaption>In the village of Giverny, France, Monet’s garden is a sanctuary that inspired the paintings of Claude Monet. Monet's garden helped him determine the subjects of his paintings, as he drew inspiration from the pond and surrounding flowers in his impressionist works. Common nature-related themes from Monet’s garden became a recurring motif throughout all of his works.</p></figcaption>
+            <figcaption>The garden is divided into the Clos Normand flower garden and the Japanese water garden. The Clos Normand consists of flowers arranged in a formal manner, while the Japanese water garden consists of lilies and a water bridge that inspired a lot of Monet’s water-related works.</p></figcaption>
 
-<img src = "images/MonetsGardenGif.gif" alt = "Monet's Garden as a gif" class = "zoom-when-hovering">
-<img src = "images/MonetsGardenPond.jpeg" alt = "Monet's Garden's pond" class = "zoom-when-hovering"> 
-<p> In the village of Giverny, France, Monet’s garden is a sanctuary that inspired the paintings of Claude Monet. Monet's garden helped him determine the subjects of his paintings, as he drew inspiration from the pond and surrounding flowers in his impressionist works. Common nature-related themes from Monet’s garden became a recurring motif throughout all of his works. </p>
-<p>The garden is divided into the Clos Normand flower garden and the Japanese water garden. The Clos Normand consists of flowers arranged in a formal manner, while the Japanese water garden consists of lilies and a water bridge that inspired a lot of Monet’s water related works. </p>
+            <h3>Photo Gallery</h3>
+            <div class="photo.grid">
+                <img src="images/GardenHouse.jpeg" alt="Monet’s house from outside in the garden" class="zoom-when-hovering">
+                <p>This image displays Monet's house where he lived while drawing inspiration from the garden.</p>
+                <figure>
+                    <img src="images/MonetsArt.jpeg" alt="A wall inside Monet’s house of various pieces of his impressionist artwork" title="Image 1" class="zoom-when-hovering">
+                    <img src="images/MonetsPond.jpeg" alt="A view onto the Japanese Water Garden" title="Image 2" class="zoom-when-hovering">
+                    <img src="images/MonetsGardenArch.jpeg" alt="A head-on view of the arches down a path in the garden" title="Image 3" class="zoom-when-hovering">
+                    <img src="images/MonetsGardenFlower.jpeg" alt="An up-close photo of a beautiful flower in Monet’s Garden" title="Image 4" class="zoom-when-hovering">
+                    <figcaption>Image 1(leftmost): Monet's impressionist art can be found throughout his house, specifically on the walls.</figcaption>
+                    <figcaption>Image 2: The pond is known for the water lilies and is modeled after a Japanese Water Garden.</figcaption>
+                    <figcaption>Image 3: The garden is filled with structures, specifically arches within the Clos Normand.</figcaption>
+                    <figcaption>Image 4(rightmost): The garden is known for its many beautiful flowers and colors.</figcaption>
+                </figure>
+            </div>
+        </div>
 
-<h3>Photo Gallery</h3>
-<div class = "photo.grid"> 
-<img src = "images/GardenHouse.jpeg" alt = "Monet’s house from outside in the garden" class = "zoom-when-hovering"> 
-<p> This image displays monet's house where he lived while drawing inspiration from the garden.</p>
-    <figure>
-        
-        <img src = "images/MonetsArt.jpeg" alt = "A wall inside Monet’s house of various pieces of his impressionist artwork" title = "Image 1" class = "zoom-when-hovering">
-        <img src = "images/MonetsPond.jpeg" alt = "A view onto the the Japanese Water Garden" title = "Image 2" class = "zoom-when-hovering">
-        <img src = "images/MonetsGardenArch.jpeg" alt = "A head-on view of the arches down a path in the garden" title = "Image 3" class = "zoom-when-hovering">
-        <img src = "images/MonetsGardenFlower.jpeg" alt = "An up-close photo of a beautiful flower in Monet’s Garden" title = "Image 4" class = "zoom-when-hovering">
-        <figcaption> Image 1(leftmost): Monet's impressionist art can be found throughout his house, specifically on the walls.</figcaption>
-        
-        <figcaption>Image 2: The pond is known for the water lilies and is modeled after a Japanese Water Garden.</figcaption>
-        
-        <figcaption>Image 3: The garden is filled with structures, specifically arches within the Clos Normand.</figcaption>
-        
-        <figcaption>Image 4(rightmost): The garden is known for its many beautiful flowers and colors.</figcaption>
-    </figure>
-</div>
-</div>
-         <!-- Shreyas Sreeprakash and Emily Libman -->
-   
-    <div>
-        <!--trav 2-->
-        <h2>Yellowstone</h2>
+        <!-- Shreyas Sreeprakash and Emily Libman -->
 
-        <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron." class = "zoom-when-hovering">
-        <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron" class = "zoom-when-hovering">
+        <div>
+            <!--trav 2-->
+            <h2>Yellowstone</h2>
+            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron." class="zoom-when-hovering">
+            <img src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron" class="zoom-when-hovering">
+            <h3>Geographical Location: North America</h3>
+            <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres and provides an opportunity to see wildlife and explore geothermal areas. In fact, Yellowstone contains about half the world's active geysers.</p>
+            <p>These unique opportunities also bring out a lot of bad decisions among the tourists. Every year visitors injure themselves or the wildlife by getting close to the animals. You can see examples of people making bad decisions by visiting <a href="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
+            <h3>Photo Gallery</h3>
+            <div class="photo.grid">
+                <figure>
+                    <img src="images/yellowstone_travertine.JPG" width="200" alt="A large mound of multi-colored travertine" title="Image 1" class="zoom-when-hovering">
+                    <img src="images/yellowstone_sunset.jpg" width="200" alt="Sunset over mountains with some charred trees in the foreground" title="Image 2" class="zoom-when-hovering">
+                    <img src="images/yellowstone_sulphur_springs.JPG" alt="A large spring with clouds of sulfur smoke rising from it." title="Image 3" class="zoom-when-hovering">
+                    <figcaption>Image 1(leftmost): Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+                    <figcaption>Image 2: The drive to Lamar Valley requires some dangerous roads. But the result is amazing sunset views.</figcaption>
+                    <figcaption>Video 1: The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
+                    <figcaption>Video 2: The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't licking the car, we aren't stopping."</figcaption>
+                    <figcaption>Image 3(rightmost): If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+                </figure>
+            </div>
+            <!-- Colleen van Lent -->
+        </div>
 
-        <h3>Geographical Location: North America</h3>
-        <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
-        <p>These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
+        <h2>Dublin, Ireland</h2>
+        <img src="images/dublin_city.jpg" alt="Dublin City">
+        <p>Geographical Location: Western Europe</p>
+        <p>Dublin City is the capital city of the Republic of Ireland and is located in the east of Ireland. Dublin was originally a Viking settlement called Dubh Linn, which translates to black pool. Dublin has always been a historically significant city in Irish history, from being the main city from which the British ruled over Ireland for 800 years to then being the setting of the 1916 Easter Rising and Irish War of Independence.</p>
+        <p>Today Dublin is a developed city boasting one of the strongest tech sectors in Europe and a booming tourism industry. Dublin is renowned for its sites such as the GPO, Croke Park, O'Connell Street, Temple Bar, and Saint James Gate, which is where Guinness is brewed. Dublin is also surrounded by great coastal towns such as Dun Laoghaire, Howth, and Skerries.</p>
 
         <h3>Photo Gallery</h3>
-        <div class = "photo.grid"> 
-        <figure>
-            <img src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine" title = "Image 1" class = "zoom-when-hovering">
-            <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground" title = "Image 2" class = "zoom-when-hovering">
-            <video width="200"  controls title = "video 1" class = "zoom-when-hovering">
-                <source src="images/yellowstone_prism.MOV" >
-                Your browser does not support the video tag.
-            </video>
-            <video width="200"  controls title = "video 2" class = "zoom-when-hovering">
-                <source src="images/yellowstone_buffalo.MOV">
-                Your browser does not support the video tag.
-            </video>
-            <img src="images/yellowstone_sulphur_springs.JPG" alt="A large spring with clouds of sulfur smoke rising from it." title = "Image 3" class = "zoom-when-hovering">
-            <figcaption> Image 1(leftmost): Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
-            <figcaption> Image 2: The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views.</figcaption>
-            <figcaption> Video 1: The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring.</figcaption>
-            <figcaption> Video 2: The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping."</figcaption>
-            <figcaption> Image 3(rightmost): If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
-        </figure>
+        <div class="photo.grid">
+            <figure>
+                <img src="images/gpo.jpg" alt="The GPO" title="Image 1" class="zoom-when-hovering">
+                <img src="images/croke_park.jpg" alt="A packed Croke Park" title="Image 2" class="zoom-when-hovering">
+                <figcaption>Image 1: The GPO was used in the 1916 Easter Rising as a rebel holdout. Scars from the battle such as bullet holes are still visible on its pillars today.</figcaption>
+                <figcaption>Image 2: Croke Park is Ireland's largest stadium, known for hosting the All-Ireland football and hurling finals annually. It has a capacity of 82,300 making it the 4th largest stadium in Europe.</figcaption>
+            </figure>
         </div>
-         <!-- Colleen van Lent -->
-         </div>
-         <h2>Dublin, Ireland</h2>
-
-         <img src="images/dublin_city.jpg" 
-         alt="Dublin City">
-         <p> Geographical Location:  Western Europe</p>
-             <p> Dublin City is the capital city of the Republic of Ireland and is located in the east of Ireland. 
-                 Dublin was originally a Viking settlement called Dubh Linn which translates to black pool. 
-                 Dublin has always been a historically significant city in Irish history, 
-                 from being the main city from which the British ruled over Ireland for 800 years 
-                 to then being the setting of the 1916 Easter Rising and Irish War of Independence.
-                 </p>
-         <p>Today Dublin is a developed city boasting one of the strongest tech sectors in Europe and a booming tourism industry.
-          Dublin is renowned for its sites such as the GPO, Croke Park, O'Connell Street, Temple Bar and Saint James Gate, 
-          which is where Guinness is brewed. Dublin is also surrounded by great coastal towns such as Dun Laoghaire, Howth and Skerries.</p>
-         
-         <h3>Photo Gallery</h3>
-         <div>
-            <div class = "photo.grid">
-                <figure> 
-         <img src="images/gpo.jpg" 
-         alt="The GPO" title = "Image 1" class = "zoom-when-hovering">
-         <img src="images/croke_park.jpg" 
-         alt="A packed Croke Park" title = "Image 2" class = "zoom-when-hovering">
-         <figcaption> Image 1: The GPO was used in the 1916 Easter Rising as a rebel holdout. Scars from the battle such as bullet holes are still visible on its pillars today.</figcaption>
-         <figcaption> Image 2: Croke Park is Ireland's largest stadium, known for hosting the All-Ireland football and hurling finals annually. 
-             It has a capacity of 82,300 making it the 4th largest stadium in Europe.</figcaption>
-            </figure> 
-         </div>
-         <!--geragd23-->
-         <div>
+        <!--geragd23-->
+        <div>
             <!--trav 4-->
             <h2>San Francisco</h2>
-    
-            <img src="images/San_Francisco_bridge.gif" alt="Golden Gate Bridge" title = "San Francisco gif" class = "zoom-when-hovering">
+            <img src="images/San_Francisco_bridge.gif" alt="Golden Gate Bridge" title="San Francisco gif" class="zoom-when-hovering">
             <br>
-            <img src="images/San_Francisco_bridge.jpeg" alt="Golden Gate Bridge" title = "Golden Gate bridge" class = "zoom-when-hovering">
+            <img src="images/San_Francisco_bridge.jpeg" alt="Golden Gate Bridge" title="Golden Gate bridge" class="zoom-when-hovering">
             <br>
-
             <h3>Geographical Location: North America</h3>
             <p>San Francisco is a great location to visit with many landmarks, including the Golden Gate Bridge and Alcatraz. Located in Northern California, San Francisco is one of the most populated cities in California with a population of 815,000. The city is also a center of culture and industry. San Francisco is home to a thriving tech industry.</p>
             <p>San Francisco has many trails and parks where you can hike or enjoy a walk. The Presidio is a large park with hiking trails and paths surrounding the Golden Gate Bridge area. One can see picturesque views of the bay and its wildlife.</p>
 
             <h3>Photo Gallery</h3>
             <figure>
-                <img src="images/San_Francisco_Alcatraz.jpeg" alt="Image of the Alcatraz prison" title = "Image 1" class = "zoom-when-hovering">
-                
-                <img src="images/San_Francisco_Lombard.jpeg" alt="Picture of Lombard street in San Francisco" title = "Image 2" class = "zoom-when-hovering">
-                
-                <img src="images/San_Francisco_painted_ladies.jpeg" alt="Image of the homes known as the Painted Ladies. A row of colorful homes that are adjacent to a park. They are known for being in Full House."
-                title = "Image 3" class = "zoom-when-hovering">
-                
-                <img src="images/San_Francisco_street.jpeg" alt="Steep hill in San Francisco with cars on it." title = "Image 4" class = "zoom-when-hovering">
-                
-                <img src="images/San_Francisco_palace.jpeg" alt="Image of the Palace of Fine Arts in San Francisco, a large structure surrounded by a pleasant park."
-                title = "Image 5" class = "zoom-when-hovering">
-                <figcaption> Image 1(Leftmost):Hill in San Francisco</figcaption>
-                <figcaption> Image 2: The Painted Ladies</figcaption>
-                <figcaption> Image 3: Lombard Street</figcaption>
-                <figcaption> Image 4: Alcatraz Island</figcaption>
-                <figcaption> Image 5(rightmost): The Palace of Fine Arts in San Francisco</figcaption>
+                <img src="images/San_Francisco_Alcatraz.jpeg" alt="Image of the Alcatraz prison" title="Image 1" class="zoom-when-hovering">
+                <img src="images/San_Francisco_Lombard.jpeg" alt="Picture of Lombard street in San Francisco" title="Image 2" class="zoom-when-hovering">
+                <img src="images/San_Francisco_painted_ladies.jpeg" alt="Image of the homes known as the Painted Ladies. A row of colorful homes that are adjacent to a park. They are known for being in Full House." title="Image 3" class="zoom-when-hovering">
+                <img src="images/San_Francisco_street.jpeg" alt="Steep hill in San Francisco with cars on it." title="Image 4" class="zoom-when-hovering">
+                <img src="images/San_Francisco_palace.jpeg" alt="Image of the Palace of Fine Arts in San Francisco, a large structure surrounded by a pleasant park." title="Image 5" class="zoom-when-hovering">
+                <figcaption>Image 1(Leftmost): Hill in San Francisco</figcaption>
+                <figcaption>Image 2: The Painted Ladies</figcaption>
+                <figcaption>Image 3: Lombard Street</figcaption>
+                <figcaption>Image 4: Alcatraz Island</figcaption>
+                <figcaption>Image 5(rightmost): The Palace of Fine Arts in San Francisco</figcaption>
             </figure>
             <!--emily libman-->
-         </div>
         </div>
 
         <div>
             <!--location 5-->
             <h2>Guangzhou, China</h2>
-    
             <img src="images/guangzhou_canton_tower.gif" alt="Canton Tower GIF">
             <img src="images/guangzhou_canton_tower.jpg" alt="Canton Tower on waterside.">
-
             <h3>Geographical Location: Asia</h3>
-            <p>Guangzhou is the capital and largest city of Guangdong province in southern China. Located on the Pearl River about 120 km (75 mi) north-northwest of Hong Kong and 145 km (90 mi) north of Macau, Guangzhou has a history of over 2,200 years and was a major terminus of the maritime Silk Roa it continues to serve as a major port and transportation hub as well as being one of China's three largest cities. </p>
-            <p>Guangzhou is celebrated for its many handicraft products, including ivory carvings, jade objects, embroideries, fans, porcelain, and paper umbrellas. These, along with the citys famous cuisine and its many museums and other cultural attractions, have made Guangzhou one of China&#39;s principal tourist destinations.</p>
+            <p>Guangzhou is the capital and largest city of Guangdong province in southern China. Located on the Pearl River about 120 km (75 mi) north-northwest of Hong Kong and 145 km (90 mi) north of Macau, Guangzhou has a history of over 2,200 years and was a major terminus of the maritime Silk Road; it continues to serve as a major port and transportation hub as well as being one of China's three largest cities.</p>
+            <p>Guangzhou is celebrated for its many handicraft products, including ivory carvings, jade objects, embroideries, fans, porcelain, and paper umbrellas. These, along with the city's famous cuisine and its many museums and other cultural attractions, have made Guangzhou one of China's principal tourist destinations.</p>
 
             <h3>Photo Gallery</h3>
-            <div class = "photo.grid"> 
-            <figure>
-                <img src="images/guangzhou_shangxiajiu_pedestrian_street.jpg" alt="Image of Shangxiajiu pedestrian street full of glowing signs and stores."
-                title = "Image 1" class = "zoom-when-hovering">
-               
-                <img src="images/guangzhou_opera_house.jpg" alt="Waterside image of Guangzhou Opera House"
-                title = "Image 2" class = "zoom-when-hovering">
-                
-                <img src="images/guangzhou_pearlriver.jpg" alt="Night time river view of glowing boat on the pearl river."
-                title = "Image 3" class = "zoom-when-hovering">
-                
-                <img src="images/guangzhou_liwanpark.jpg" alt="Image of bridges in Liwan Park"
-                title = "Image 4" class = "zoom-when-hovering">
-                
-                <img src="images/guangzhou_sunyatsen.jpg" alt="Image of temple of Sun Yat-sen Memorial hall"
-                title = "Image 5" class = "zoom-when-hovering">
-                <figcaption> Image 1: Shangxiajiu pedestrian street in Guangzhou, a bustling street full of places to eat and shop!</figcaption>
+            <div class="photo.grid">
+                <img src="images/guangzhou_shangxiajiu_pedestrian_street.jpg" alt="Image of Shangxiajiu pedestrian street full of glowing signs and stores." title="Image 1" class="zoom-when-hovering">
+                <img src="images/guangzhou_opera_house.jpg" alt="Waterside image of Guangzhou Opera House" title="Image 2" class="zoom-when-hovering">
+                <img src="images/guangzhou_pearlriver.jpg" alt="Nighttime river view of glowing boat on the pearl river." title="Image 3" class="zoom-when-hovering">
+                <img src="images/guangzhou_liwanpark.jpg" alt="Image of bridges in Liwan Park" title="Image 4" class="zoom-when-hovering">
+                <img src="images/guangzhou_sunyatsen.jpg" alt="Image of the temple of Sun Yat-sen Memorial hall" title="Image 5" class="zoom-when-hovering">
+                <figcaption>Image 1: Shangxiajiu pedestrian street in Guangzhou, a bustling street full of places to eat and shop!</figcaption>
                 <figcaption> Image 2: Guangzhou Opera house on the shore of the Pearl River: Concerts, dances, and performance art happen year-round here.</figcaption>
                 <figcaption> Image 3: Pearl River offers night cruises, where tourists can enjoy the lights of the city at night as well as get a nice view of the Canton Tower.</figcaption>
                 <figcaption> Image 4: Liwan Park has lots to offer. With Cantoneese Opera, theater, singing, acrobatics, etc. there is lots of Chinese history depicted. Take pictures and rent a paddleboat!</figcaption>
@@ -214,15 +172,9 @@
                  <figcaption> Image 3: Chennai places a large emphasis on pop culture, specifically movies and the actor MGR.</figcaption>
                  <figcaption> Image 4: Chennai is very heavily populated, and traffic is a staple of the city.</figcaption>
                  <figcaption> Image 5: Chennai maintains ancient temples by the water, such as this one in the district of Mahabalipuram.</figcaption>
-             </figure>
+                     </figure>
+                </div>
              </div>
-        </div>
-    </div>
-            </main>
-            <div id="comment">
-                <h2>Leave a Comment</h2>
-                  <textarea id="comment-text" name="comment" rows="10" cols="10"></textarea>
-              </div>
-           
+    </main>
 </body>
 </html>
