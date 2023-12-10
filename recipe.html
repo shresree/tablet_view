@@ -12,11 +12,11 @@
     <a href = "index.html" class = "skip"> Skip to Main Content</a>
     <i class="fa fa-leaf"></i>
     <nav>
-        
-            <li><a href = "index.html" >Home/Travel</a></li>
+        <ul>
+            <li><a href = "index.html" >Travel</a></li>
             <li><a href = "pets.html" >Pets</a></li>
             <li><a href = "recipe.html" class = "current_pg" >Recipes</a></li>
-        
+        </ul>
     </nav>
     <main id = "main">
         <div id = "comment"> 
@@ -70,7 +70,7 @@
             <span>Source: Own Recipe</span>
             <span>Category: Main Dish</span>
 
-            <img src="Images/basically-no-cook-tomato-sauce.jpg" width = "400" alt = "" class = "zoom-when-hovering">
+            <img src="Images/scrambledeggs.jpg" width = "400" alt = "" class = "zoom-when-hovering">
             <p>This is an easy way to make spicy and tasty scrambeled eggs for breakfast, lunch, or dinner and only takes 15 minutes to make.</p>
 
             <h3>Recipe Ingredients:</h3>
@@ -155,7 +155,43 @@
         </div>
     </div>
     </main>
-   
+    <div id="comments-section">
+        <h2>Comments</h2>
+        <div id="comments-container"></div>
+    
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="4" required></textarea>
+    
+            <button type="button" onclick="addComment()">Add Comment</button>
+        </form>
+    </div>
    
 </body>
 </html>
+<script>
+    function addComment() {
+        const nameInput = document.getElementById('name');
+        const commentInput = document.getElementById('comment');
+        const commentsContainer = document.getElementById('comments-container');
+    
+        const name = nameInput.value;
+        const comment = commentInput.value;
+    
+        if (!name || !comment) {
+            alert('Please enter your name and comment.');
+            return;
+        }
+    
+        const commentElement = document.createElement('div');
+        commentElement.className = 'comment';
+        commentElement.innerHTML = `<strong>${name}:</strong> ${comment}`;
+    
+        commentsContainer.appendChild(commentElement);
+        nameInput.value = '';
+        commentInput.value = '';
+    }
+    </script>
