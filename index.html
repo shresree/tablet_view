@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfbRiQg7q_2LXtPnMZx3GmgnpJ7NKWLSY&libraries=places"></script>
     <title>Travel</title>
 </head>
 
@@ -17,16 +18,17 @@
     <i class="fa fa-cloud"></i>
 </header>
     <nav>
-      
-           <li> <a href="index.html" class="current_pg">Travel</a></li>
+        <ul>
+            <li><a href="index.html" class="current_pg">Travel</a></li>
             <li><a href="pets.html">Pets</a></li>
             <li><a href="recipe.html">Recipes</a></li>
-       
+        </ul>
     </nav>
     <main id="main">
         <div id="comments">
-            <h2>Monet’s Garden</h2>
-            <img src="Images/MonetsGardenGif.gif" alt="Monet's Garden as a gif" class="zoom-when-hovering">
+            <h2 id="monetsGarden">  Monet’s Garden</h2>
+            
+             <img src="Images/MonetsGardenGif.gif" alt="Monet's Garden as a gif" class="zoom-when-hovering">
             <img src="Images/MonetsGardenPond.jpeg" alt="Monet's Garden's pond" class="zoom-when-hovering">
             <figcaption>In the village of Giverny, France, Monet’s garden is a sanctuary that inspired the paintings of Claude Monet. Monet's garden helped him determine the subjects of his paintings, as he drew inspiration from the pond and surrounding flowers in his impressionist works. Common nature-related themes from Monet’s garden became a recurring motif throughout all of his works.</p></figcaption>
             <figcaption>The garden is divided into the Clos Normand flower garden and the Japanese water garden. The Clos Normand consists of flowers arranged in a formal manner, while the Japanese water garden consists of lilies and a water bridge that inspired a lot of Monet’s water-related works.</p></figcaption>
@@ -174,5 +176,50 @@
                 </div>
              </div>
     </main>
+
+<div id="comments-section">
+    <h2>Comments</h2>
+    <div id="comments-container"></div>
+
+    <form id="comment-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" rows="4" required></textarea>
+
+        <button type="button" onclick="addComment()">Add Comment</button>
+    </form>
+</div>
 </body>
 </html>
+<script>
+    function addComment() {
+        const nameInput = document.getElementById('name');
+        const commentInput = document.getElementById('comment');
+        const commentsContainer = document.getElementById('comments-container');
+    
+        const name = nameInput.value;
+        const comment = commentInput.value;
+    
+        if (!name || !comment) {
+            alert('Please enter your name and comment.');
+            return;
+        }
+    
+        const commentElement = document.createElement('div');
+        commentElement.className = 'comment';
+        commentElement.innerHTML = `<strong>${name}:</strong> ${comment}`;
+    
+        commentsContainer.appendChild(commentElement);
+        const locationContainer = document.querySelector(`#${locationId}`);
+        const locationImage = locationContainer.querySelector('.front img');
+        locationImage.src = imageSrc;
+
+        const locationDescription = locationContainer.querySelector('.back p');
+        locationDescription.innerHTML = description;
+        nameInput.value = '';
+        commentInput.value = '';
+    }
+
+    </script>
