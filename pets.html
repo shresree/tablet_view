@@ -11,11 +11,11 @@
     <header> <h1>Pets</h1> </header>
     <a href = "index.html" class = "skip"> Skip to Main Content</a>
     <nav>
-       
+        <ul>
             <li><a href = "index.html" >Travel</a></li>
             <li><a href = "pets.html" class = "current_pg" >Pets</a></li>
             <li><a href = "recipe.html" >Recipes</a></li>
-       
+        </ul>
     </nav>
     <main>
         <div>
@@ -141,10 +141,42 @@
         <!--Emily Libman-->
     </div>
     </main>
-    <div id="comment">
-        <h2>Leave a Comment</h2>
-          <textarea id="comment-text" name="comment" rows="10" cols="10"></textarea>
-      </div>
-
+      <div id="comments-section">
+        <h2>Comments</h2>
+        <div id="comments-container"></div>
+    
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+    
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="4" required></textarea>
+    
+            <button type="button" onclick="addComment()">Add Comment</button>
+        </form>
+    </div>
 </body>
 </html>
+<script>
+    function addComment() {
+        const nameInput = document.getElementById('name');
+        const commentInput = document.getElementById('comment');
+        const commentsContainer = document.getElementById('comments-container');
+    
+        const name = nameInput.value;
+        const comment = commentInput.value;
+    
+        if (!name || !comment) {
+            alert('Please enter your name and comment.');
+            return;
+        }
+    
+        const commentElement = document.createElement('div');
+        commentElement.className = 'comment';
+        commentElement.innerHTML = `<strong>${name}:</strong> ${comment}`;
+    
+        commentsContainer.appendChild(commentElement);
+        nameInput.value = '';
+        commentInput.value = '';
+    }
+    </script>
